@@ -18,20 +18,20 @@
         android:id="@+id/trueButton"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="True"
+        android:text="@string/str_true_btn"
         android:textSize="32sp" />
 
     <Button
         android:id="@+id/falseButton"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="False"
+        android:text="@string/str_false_btn"
         android:textSize="32sp"/>
     <Button
         android:id="@+id/nextButton"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Next"
+        android:text="@string/str_next_btn"
         android:textSize="32sp"/>
 
 </LinearLayout>
