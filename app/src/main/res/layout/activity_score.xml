@@ -20,7 +20,12 @@
         android:layout_height="wrap_content"
         android:gravity="center"
         android:text="0"
-        android:textSize="53sp" />
-
+        android:textSize="53sp"/>
+    <Button
+        android:id="@+id/sendScoreButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Send Score to Email"
+        android:textSize="53sp"/>
 
 </LinearLayout>

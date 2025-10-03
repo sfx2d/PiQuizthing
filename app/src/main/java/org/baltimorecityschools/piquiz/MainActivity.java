@@ -87,6 +87,7 @@ public class MainActivity extends AppCompatActivity {
                 if (currentQuestionIndex == 9){
                     Intent leaveIntent = new Intent(MainActivity.this, ScoreActivity.class);
                     leaveIntent.putExtra("score", score);
+
                     startActivity(leaveIntent);
                 }
                 else{
@@ -98,6 +99,7 @@ public class MainActivity extends AppCompatActivity {
 
             }
         });
+
 
     }
 }
