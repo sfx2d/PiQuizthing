@@ -6,6 +6,7 @@
     android:gravity="center"
     xmlns:android="http://schemas.android.com/apk/res/android" >
 
+
     <TextView
         android:id="@+id/saysSCORE"
         android:layout_width="match_parent"
