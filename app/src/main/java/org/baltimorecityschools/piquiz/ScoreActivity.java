@@ -4,6 +4,7 @@ import android.content.Intent;
 import android.net.Uri;
 import android.os.Bundle;
 import android.view.View;
+import android.webkit.WebView;
 import android.widget.Button;
 import android.widget.TextView;
 
@@ -22,7 +23,6 @@ public class ScoreActivity extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-
         setContentView(R.layout.activity_score);
         sendScoreButton = (Button) findViewById(R.id.sendScoreButton);
         Intent intent = getIntent();
@@ -33,8 +33,8 @@ public class ScoreActivity extends AppCompatActivity {
         sendScoreButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                String body = "Your score is " + score;
-                String subject = "New Score on Food Quiz.";
+                String body = "New score on Food Quiz ";
+                String subject = "Your score is " + score;
                 composeEmail(body, subject);
             }
         });
