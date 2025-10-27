@@ -1,7 +1,18 @@
 <resources>
     <string name="app_name">PiQuiz</string>
-    <string name="str_question_text">Pizza is Italian</string>
+    <string name="str_question_text1">Pizza is Italian</string>
     <string name="str_true_btn">True</string>
     <string name="str_false_btn">False</string>
     <string name="str_next_btn">Next</string>
+    <string name="str_question_text2">Ice cream can come in many flavors</string>
+    <string name="str_question_text3">Cheese is a dairy product</string>
+    <string name="str_question_text4">Dogs can talk</string>
+    <string name="str_question_text5">Roblox was made in 2012</string>
+    <string name="str_question_text6">Mexican food consists of only tacos</string>
+    <string name="str_question_text7">API 24 is called VanillaIceCream</string>
+    <string name="str_question_text8">Birds are the descendants of dinosaurs</string>
+    <string name="str_question_text9">Chicken originates in Italy</string>
+    <string name="str_question_tex10">There mushrooms that are edible</string>
+
+
 </resources>

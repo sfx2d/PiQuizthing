@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">PiQuiz</string>
+    <string name="str_question_text1">Pizza es Italiano</string>
+    <string name="str_true_btn">Verdad</string>
+    <string name="str_false_btn">Falso</string>
+    <string name="str_next_btn">Siguiente</string>
+    <string name="str_question_text2">Helado puede venir en diferentes flavores</string>
+    <string name="str_question_text3">Ques es un producto lacteos</string>
+    <string name="str_question_text4">Perros pueden hablar</string>
+    <string name="str_question_text5">Roblox fue hecho en 2012</string>
+    <string name="str_question_text6">Comida Mexicano consiste de solo tacos</string>
+    <string name="str_question_text7">API 24 es llamado Helado de Vanilla</string>
+</resources>

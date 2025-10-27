@@ -49,7 +49,7 @@ public class MainActivity extends AppCompatActivity {
         Q3 = new Question("Cheese is a dairy product", true, "https://en.wikipedia.org/wiki/Dairy_product");
         Q4 = new Question("Dogs can talk", false, "https://www.youtube.com/watch?v=01le4Ln8da0");
         Q5 = new Question("Roblox was made in 2012", false, "https://en.wikipedia.org/wiki/Roblox");
-        Q6 = new Question("Mexican food consists of only taco's", false, "https://en.wikipedia.org/wiki/Mexican_cuisine");
+        Q6 = new Question("Mexican food consists of only tacos", false, "https://en.wikipedia.org/wiki/Mexican_cuisine");
         Q7 = new Question("API 24 is called VanillaIceCream", false, "https://en.wikipedia.org/wiki/Android_version_history");
         Q8 = new Question("Birds are the descendants of dinosaurs", true, "https://www.scientificamerican.com/article/how-dinosaurs-shrank-and-became-birds/");
         Q9 = new Question("Chicken originates in Italy", false, "https://livestock.extension.wisc.edu/articles/origin-and-history-of-the-chicken/");
