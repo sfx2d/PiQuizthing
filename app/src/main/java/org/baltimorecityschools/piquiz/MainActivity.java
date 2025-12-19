@@ -2,6 +2,7 @@ package org.baltimorecityschools.piquiz;
 
 import android.annotation.SuppressLint;
 import android.content.Intent;
+import android.content.SharedPreferences;
 import android.os.Bundle;
 import android.view.View;
 import android.webkit.WebView;
@@ -17,23 +18,18 @@ import androidx.core.view.ViewCompat;
 import androidx.core.view.WindowInsetsCompat;
 
 public class MainActivity extends AppCompatActivity {
-    TextView theQuestionTV;
+    TextView theQuestionTV, WelcomeTV;
     int currentQuestionIndex;
     Question currentQ;
     int score;
     Button trueButton;
     Button falseButton;
     Button nextButton;
-    Question Q1;
-    Question Q2;
-    Question Q3;
-    Question Q4;
-    Question Q5;
-    Question Q6;
-    Question Q7;
-    Question Q8;
-    Question Q9;
-    Question Q10;
+    Question Q1, Q2, Q3, Q4, Q5, Q6, Q7, Q8, Q9, Q10;
+    SharedPreferences HighScoreRetain;
+    final String sharedPreferencesFile = "org.baltimorecityschools.piquiz.sp";
+    final String HIGH_SCORENAME_KEY = "HIGHSCORENAME";
+
     Question[] questions;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -44,6 +40,10 @@ public class MainActivity extends AppCompatActivity {
         trueButton = (Button) findViewById(R.id.trueButton);
         falseButton = (Button) findViewById(R.id.falseButton);
         nextButton = (Button) findViewById(R.id.nextButton);
+        WelcomeTV = findViewById(R.id.WelcomeTV);
+        HighScoreRetain = getSharedPreferences(sharedPreferencesFile, MODE_PRIVATE);
+        String userName = HighScoreRetain.getString(HIGH_SCORENAME_KEY, "User");
+        WelcomeTV.setText("Welcome " + userName);
         Q1 = new Question("Pizza is Italian", true, "https://en.wikipedia.org/wiki/History_of_pizza");
         Q2 = new Question("Ice cream can come in many flavors", true, "https://en.wikipedia.org/wiki/Ice_cream");
         Q3 = new Question("Cheese is a dairy product", true, "https://en.wikipedia.org/wiki/Dairy_product");
@@ -58,6 +58,9 @@ public class MainActivity extends AppCompatActivity {
         currentQuestionIndex = 0;
         currentQ = Q1;
         theQuestionTV = (TextView) findViewById(R.id.theQuestionTV);
+
+
+        //Buttons
         trueButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
