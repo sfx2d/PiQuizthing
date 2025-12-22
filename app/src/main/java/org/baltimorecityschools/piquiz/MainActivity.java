@@ -22,11 +22,13 @@ public class MainActivity extends AppCompatActivity {
     int currentQuestionIndex;
     Question currentQ;
     int score;
-    Button trueButton;
-    Button falseButton;
-    Button nextButton;
+    Button trueButton, falseButton, nextButton;
+
     Question Q1, Q2, Q3, Q4, Q5, Q6, Q7, Q8, Q9, Q10;
     SharedPreferences HighScoreRetain;
+    //SharedPreferences backroundColor;
+    //final String anotherSharedPreferencesFile = "org.baltimorecityschools.piquiz.sp";
+    //final String COLOR_KEY = "COLOR";
     final String sharedPreferencesFile = "org.baltimorecityschools.piquiz.sp";
     final String HIGH_SCORENAME_KEY = "HIGHSCORENAME";
 
@@ -36,10 +38,11 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
         // Keep links inside the WebView instead of opening the browser
-        WebView myWebView = (WebView) findViewById(R.id.webview);
-        trueButton = (Button) findViewById(R.id.trueButton);
-        falseButton = (Button) findViewById(R.id.falseButton);
-        nextButton = (Button) findViewById(R.id.nextButton);
+        WebView myWebView = findViewById(R.id.webview);
+        trueButton = findViewById(R.id.trueButton);
+        falseButton = findViewById(R.id.falseButton);
+        nextButton = findViewById(R.id.nextButton);
+
         WelcomeTV = findViewById(R.id.WelcomeTV);
         HighScoreRetain = getSharedPreferences(sharedPreferencesFile, MODE_PRIVATE);
         String userName = HighScoreRetain.getString(HIGH_SCORENAME_KEY, "User");
